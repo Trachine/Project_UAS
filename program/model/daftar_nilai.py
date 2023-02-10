@@ -18,8 +18,8 @@ class daftar():
         
     def ubah_data(self):
         print("\nUbah Data")
-        self.nama = input("Nama           : ")
-        if self.nama in x.keys():
+        self.name = input("Nama           : ")
+        if self.name in x.keys():
             try:
                 print("\nData Ditemukan")
                 print("==================")
@@ -31,7 +31,7 @@ class daftar():
                 self.tugas = int(input("Nilai Tugas    : "))
                 self.akhir = self.tugas*30/100 + self.uts*35/100 + self.uas*35/100
                 x[self.nama] = self.nim, self.tugas, self.uts, self.uas, self.akhir
-                del x[self.nama]
+                del x[self.name]
                 print()
                 print("|====================================|")
                 print("|        BERHASIL MENGUBAH DATA      |")

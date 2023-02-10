@@ -11,6 +11,6 @@ class masuk():
             self.tugas = int(input("Nilai Tugas    : "))
             self.akhir = self.tugas*30/100 + self.uts*35/100 + self.uas*35/100
             x[self.nama] = self.nim, self.tugas, self.uts, self.uas, self.akhir
-        except ValueError:
+        except :
             print("Mohon hanya masukan angka untuk NIM dan Nilai")
             self.input_data()
